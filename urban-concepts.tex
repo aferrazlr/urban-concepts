@@ -1,0 +1,95 @@
+% %This is a very basic article template. %There is just one section and two
+% subsections. \documentclass{article}
+\documentclass[twocolumn, 10pt, a4paper]{article}
+
+
+\usepackage{graphics}
+% make hyperrefs
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+
+
+% use specific settings to get refs after each section
+\usepackage[sectionbib]{natbib}
+\usepackage{chapterbib}
+
+
+\newcommand{\authorfont}{\fontsize{12}{14}\selectfont}
+\newcommand{\titlefont}{\fontsize{12}{14}\selectfont \bf}
+
+
+\begin{document}
+
+% \onehalfspacing
+
+\date{}
+\title{\vspace{-9mm} \titlefont Urban Metabolism: Definitions, Concepts and
+Methodologies } \author{ \authorfont{Andr\'{e} Ribeiro}\\
+\authorfont{\normalsize \emph{Sustainable Energy Systems, MIT Portugal}}\\ 
+\authorfont{\normalsize \emph{Instituto Superior T\'{e}cnico, Lisboa,
+Portugal}}\\ \authorfont{\normalsize \emph{}}\\
+%\authorfont{}}\\
+%\authorfont{}\\
+\authorfont{~}
+\\ % used to add blank lines
+\vspace{-14mm}
+} \maketitle
+
+\section{ABSTRACT}
+some abstract goes here
+
+
+\tableofcontents
+
+
+\section{Introduction}
+
+
+Urban metabolism as a metaphore has been around for quiet a long time now \cite{Wolman1965}   
+and it has evolved towards some specific methodologies for urban areas analysis.
+The majority of the analysis in the area of Urban Metabolism today is linked to Material Flow Analysis (MFA).
+
+However the citys' metabolism (analysis) should be put to its own service rescue 
+
+
+
+However not many authors have settled their opinions  
+
+
+
+\section{Definitions}
+
+
+\subsection{City}
+
+
+Plain text!!
+
+
+	
+
+
+\section{Concepts}
+
+\subsection{Urban Services}
+
+More plain text. 
+
+\section{Methodologies}
+
+
+\subsection{Measuring Resilience}
+
+\subsection{System Dynamics}
+
+\bibliographystyle{chicago}
+\bibliography{library}
+
+
+\end{document}
