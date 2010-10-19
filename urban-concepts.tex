@@ -1,0 +1,73 @@
+% %This is a very basic article template. %There is just one section and two
+% subsections. \documentclass{article}
+\documentclass[twocolumn, 10pt, a4paper]{article}
+
+
+
+
+\usepackage{graphics}
+% make hyperrefs
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+
+
+% use specific settings to get refs after each section
+\usepackage[sectionbib]{natbib}
+\usepackage{chapterbib}
+
+
+\newcommand{\authorfont}{\fontsize{12}{14}\selectfont}
+\newcommand{\titlefont}{\fontsize{12}{14}\selectfont \bf}
+
+\begin{document}
+
+% \onehalfspacing
+
+
+\date{}
+\title{\vspace{-9mm} 
+\titlefont Urban Resilience through stocks: Static and Dynamic analysis}
+
+\author{ \authorfont{Andr\'{e} Ribeiro}\\
+\authorfont{\normalsize \emph{Sustainable Energy Systems, MIT Portugal}}\\ 
+\authorfont{\normalsize \emph{Instituto Superior T\'{e}cnico, Lisboa,
+Portugal}}\\ \authorfont{\normalsize \emph{}}\\
+%\authorfont{}}\\
+%\authorfont{}\\
+\authorfont{~}
+\\ % used to add blank lines
+\vspace{-14mm}
+} \maketitle
+
+
+\begin{abstract}
+abstract goes here...
+\end{abstract}
+
+\tableofcontents
+
+\input{1introduction}
+
+\input{2definitions}
+
+\section{Methodologies}
+
+
+\subsection{Measuring Resilience}
+
+\subsection{System Dynamics}
+
+
+\input{3io-scaling}
+
+\bibliographystyle{chicago}
+\bibliography{library,manual-lib}
+
+
+\end{document}
