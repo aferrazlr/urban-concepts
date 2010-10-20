@@ -1,0 +1,64 @@
+\documentclass[twocolumn, 10pt, a4paper]{article}
+
+\usepackage{verbatim}
+\usepackage{graphics}
+% make hyperrefs
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=blue,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+
+% use specific settings to get refs after each section
+\usepackage[sectionbib]{natbib}
+\usepackage{chapterbib}
+
+
+\newcommand{\authorfont}{\fontsize{12}{14}\selectfont}
+\newcommand{\titlefont}{\fontsize{12}{14}\selectfont \bf}
+
+\begin{document}
+
+% \onehalfspacing
+
+\date{}
+\begin{comment}
+Re-think title
+\end{comment}
+\title{\vspace{-9mm} 
+\titlefont Urban Resilience through stocks: Static and Dynamic analysis}
+
+\author{ \authorfont{Andr\'{e} Ribeiro}\\
+\authorfont{\normalsize \emph{Sustainable Energy Systems, MIT Portugal}}\\ 
+\authorfont{\normalsize \emph{Instituto Superior T\'{e}cnico, Lisboa,
+Portugal}}\\ \authorfont{\normalsize \emph{}}\\
+%\authorfont{}}\\
+%\authorfont{}\\
+\authorfont{~}
+\\ % used to add blank lines
+\vspace{-14mm}
+} \maketitle
+
+
+\begin{abstract}
+abstract goes here...
+\end{abstract}
+
+\tableofcontents
+
+\input{1introduction}
+
+\input{2definitions}
+
+\input{3static-model}
+
+\input{4dynamic-model}
+
+
+\bibliographystyle{chicago}
+\bibliography{library,manual-lib}
+
+\end{document}
